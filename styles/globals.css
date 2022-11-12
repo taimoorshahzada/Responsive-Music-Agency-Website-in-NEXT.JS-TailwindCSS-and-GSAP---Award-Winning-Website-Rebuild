@@ -1,26 +1,46 @@
-html,
+/** @format */
+@font-face {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Monument Extended"),
+    url("https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Monument Extended"),
+    url("https://fonts.cdnfonts.com/s/19595/MonumentExtended-Ultrabold.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Neutral Face";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Neutral Face"),
+    url("../fonts/neutralface-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Neutral Face";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Neutral Face"),
+    url("../fonts/neutralface-bold-webfont.woff") format("woff");
+}
+
+/* you can download this fonts file in description below */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  color: #e7e7e7;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+::-webkit-scrollbar {
+  display: none;
 }
